@@ -1,0 +1,44 @@
+1. Inicio
+2. funcion principal()
+3.      cedula, x(n)[{0-n}]
+4. 	nombre, x(n)[{A,Z}, {a,z}, {BS}]
+5.  	condicion, i[1-2]
+5. 	Escribir "Ingrese sus nombre y apellido"
+6.  	leer nombre
+7.	Escribir "Ingrese el numero de cedula"
+8. 	leer cedula
+9. 	Escribir "Ingrese 1 para obtener la planilla de la luz y 2 para el valor del predio a pagar"
+10. 	leer condicion
+11. 	Si (condicion == 1) entonces
+12. 	    obtenerPlanilla(cedula, nombre)
+13.       Por lo contrario
+14.          Si (condicion == 2) entonces
+15. 		obtenerInmueble(cedula, nombre)
+16.     Fin_Si
+17. fin funcion principal()
+
+18. funcion obtenerPlanilla(ced, x(n)[{0-n}]; nombre, x(n)[{A,Z}, {a,z}, {BS}])
+19.	valorkW, d[0-n]
+20.	numerokW, d[0-n]
+21.	valorPlanilla, d[0-n]
+22. 	Escribir "Ingrese el valor por cada kilowaltio"
+23.	leer valorkW
+24. 	Escribir "Ingrese el numero de kW consumidos"
+25.	leer numerokW
+26.	valorPlanilla <-- valorkW * numerokW
+27. 	Escribir "Cliente " + nombre + " con cédula " + ced + " debe cancelar el valor de $" + valorPlanilla
+28. fin funcion obtenerPlanilla
+
+29. funcion obtenerPredio(ced, x(n)[{0-n}]; nombre, x(n)[{A,Z}, {a,z}, {BS}])
+30. 	valorInmueble, d[0-n]
+31. 	porcentaje, i[0-n] <-- 2
+32. 	valorPredio, d[0-n]
+33. 	Escribir "Ingrese el valor del inmueble"
+34.	leer valorInmueble
+35. 	valorPredio <-- (valorInmueble * porcentaje)/100
+36.	Escribir "Cliente " + nombre + " con cédula " + ced + " tiene un bien inmueble valorado en $" + valorInmueble + " y tiene que pagar de predio $" + valorPredio
+37. fin funcion obtenerPredio
+
+38. Fin
+
+

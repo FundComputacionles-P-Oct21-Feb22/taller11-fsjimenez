@@ -1,0 +1,19 @@
+1. Inicio
+2. funcion principal()
+3.	funcionArreglo()
+4. fin funcion principal
+
+5. funcionArreglo()
+6. 	(valores(5), x(n)[{A-Z},{a-z},{BS}]
+7.	numero, i[0-n]
+8.	limite, i[0-n] <-- 5
+9. 	para(numero<--0, denominador<5, 1) haga
+10. 	    Escribir "Ingrese un valor"
+11.	    leer valores[numero]
+12.     fin_para
+13. 	para(numero<--0, denominador<5, 1) haga
+14. 	    Escribir valores[numero]
+15.     fin_para
+16. fin funcionArreglo
+17. Fin
+
